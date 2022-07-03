@@ -1,0 +1,15 @@
+import React from "react";
+
+export default function Phonetic(props) {
+  console.log(props.phonetic);
+  return (
+    <div className="phonetics">
+      <a href={props.phonetic.audio} target="blank">
+        {" "}
+        Listen
+      </a>
+      <br />
+      {props.phonetic.text}
+    </div>
+  );
+}
