@@ -29,7 +29,9 @@ export default function Dictionary() {
         </form>
       </div>
       <Results results={results}/>
-      <footer className="text-center">search</footer>
+      <br />
+      <br />
+      <footer className="text-center">Coded by <a href="https://github.com/AmaTwumasi">AmaTwumasi</a></footer>
     </div>
   );
 }
