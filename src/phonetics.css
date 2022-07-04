@@ -1,0 +1,11 @@
+.phonetics a {
+    color: rgb(177, 31, 182);
+    padding: 3px;
+    background: rgb(200, 222, 233);
+    border-radius: 5px;
+    margin: 15px;
+    text-decoration: none;
+}
+.phonetics {
+    color: blue;
+}

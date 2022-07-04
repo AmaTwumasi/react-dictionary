@@ -1,6 +1,21 @@
-.App-header {
-    font-weight: bold;
-  
-    line-height: 7;
-    color: red;
+body {
+background: #7b68ac;
 }
+.App {
+margin: 10px 150px;
+  color: rgb(63, 35, 63);
+
+}
+.App-header {
+    color: white;
+  font-weight: bold;
+  line-height: 4;
+  font-size: 24px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-weight: bold;
+}
+footer {
+    color: white;
+}
+ 

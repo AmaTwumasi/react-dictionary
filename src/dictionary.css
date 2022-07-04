@@ -1,5 +1,17 @@
-.container {
+.Dictionary section {
     line-height: 2;
-    margin-bottom: 15px;
-    border-radius: 100;
+    margin: 20px;
+    border: 5px;
+    border-radius: 10px;
+    background-color: rgb(255, 255, 255);
+    padding: 10px;
+    box-shadow: 10px 5px 15px (rgb 0 0 0 80%)
+}
+.Dictionary input{
+    width: 70%;
+    margin: 20px;
+    border-radius: 5px;
+}
+.Dictionary p {
+    color: rgb(98, 31, 160);
 }

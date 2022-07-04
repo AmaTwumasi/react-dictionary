@@ -1,37 +1,56 @@
 import React, { useState } from "react";
 import axios from "axios";
-import Results from "./results"
+import Results from "./results";
 import "./dictionary.css";
 
-export default function Dictionary() {
-  let [keyword, setKeyword] = useState("");
+export default function Dictionary(props) {
+  let [keyword, setKeyword] = useState(props.defaultKeyword);
   let [results, setResults] = useState(null);
+  let [loaded, setLoaded] = useState(false);
 
   function handleResponse(response) {
-    setResults(response.data[0])
+    setResults(response.data[0]);
   }
 
-  function search(event) {
-    event.preventDefault();
-
+  function search() {
     //documentation= https://dictionaryapi.dev/
     let apiUrl = `https://api.dictionaryapi.dev/api/v2/entries/en_US/${keyword}`;
     axios.get(apiUrl).then(handleResponse);
   }
+
+  function handleSubmit(event) {
+    event.preventDefault();
+    search();
+  }
   function changeKeyword(event) {
     setKeyword(event.target.value);
   }
-  return (
-    <div>
-      <div className="container text-center">
-        <form onSubmit={search}>
-          <input type="search" onChange={changeKeyword} />
-        </form>
+  function load() {
+    setLoaded(true);
+    search();
+  }
+  if (loaded) {
+    return (
+      <div>
+        <div className="Dictionary">
+          <section>
+            <form onSubmit={handleSubmit}>
+              <input type="search" onChange={changeKeyword}
+              defaultValue={props.defaultKeyword} />
+            </form>
+            <p> Search for a word. eg: beach, sunset.......</p>
+          </section>
+        </div>
+
+        <Results results={results} />
+        <br />
+        <br />
+        <footer className="text-center">
+          Coded by <a href="https://github.com/AmaTwumasi">AmaTwumasi</a>
+        </footer>
       </div>
-      <Results results={results}/>
-      <br />
-      <br />
-      <footer className="text-center">Coded by <a href="https://github.com/AmaTwumasi">AmaTwumasi</a></footer>
-    </div>
-  );
+    );
+  } else {
+    load();
+  }
 }
