@@ -9,7 +9,7 @@ function App() {
       </header>
       <main>
         {" "}
-        <Dictionary defaultKeyword="hope"/>{" "}
+        <Dictionary defaultKeyword="sunrise"/>{" "}
       </main>
     </div>
   );

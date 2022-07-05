@@ -1,13 +1,12 @@
 body {
-background: #7b68ac;
+  background: url(images/books.jpg)
 }
 .App {
-margin: 10px 150px;
+  margin: 10px 150px;
   color: rgb(63, 35, 63);
-
 }
 .App-header {
-    color: white;
+  color: white;
   font-weight: bold;
   line-height: 4;
   font-size: 24px;
@@ -16,6 +15,8 @@ margin: 10px 150px;
   font-weight: bold;
 }
 footer {
-    color: white;
+  color: white;
 }
- 
+footer a {
+  color: rgb(255, 255, 0);
+}
