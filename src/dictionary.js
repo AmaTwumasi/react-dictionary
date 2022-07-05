@@ -61,7 +61,9 @@ axios.get(pexelsApiUrl, { headers: headers}).then(handleImageResponse);
         <br />
         <br />
         <footer className="text-center">
-          Coded by <a href="https://github.com/AmaTwumasi">AmaTwumasi</a>
+          Coded by Ama Twumasi, deployed to{" "}
+          <a href="https://github.com/AmaTwumasi">Github</a> and hosted on{" "}
+          <a href="https://heartfelt-paletas-77782e.netlify.app/">Netlify</a>
         </footer>
       </div>
     );
