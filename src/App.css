@@ -24,7 +24,8 @@ footer a {
 }
 @media (max-width: 500px) {
   /* For mobile phones: */
-  body,footer {
+  body,
+  footer {
     width: 300px;
   }
 }
