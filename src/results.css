@@ -15,3 +15,8 @@ h2 {
     margin-left: 40px;
     opacity: 0.7;
 }
+@media (max-width: 500px) { 
+.results section {
+    width: 400px;
+}
+}
