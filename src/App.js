@@ -3,6 +3,7 @@ import "./App.css";
 
 function App() {
   return (
+    <div className="col-sm">
     <div className="App">
       <header className="App-header text-center">
         Dictionary
@@ -11,6 +12,7 @@ function App() {
         {" "}
         <Dictionary defaultKeyword="sunrise"/>{" "}
       </main>
+    </div>
     </div>
   );
 }
