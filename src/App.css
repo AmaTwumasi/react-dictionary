@@ -22,3 +22,9 @@ footer a {
   color: rgb(255, 255, 0);
   text-decoration: none;
 }
+@media (max-width: 500px) {
+  /* For mobile phones: */
+body {
+  width: 400px;
+ }
+}
