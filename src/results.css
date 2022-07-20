@@ -17,6 +17,6 @@ h2 {
 }
 @media (max-width: 500px) { 
 .results section {
-    width: 400px;
+    width: 250px;
 }
 }
